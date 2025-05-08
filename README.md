@@ -2,15 +2,22 @@
 An artificial intelligence-based model for prediction of clonal hematopoiesis variants in cell-free DNA samples. 
 
 ## Requirements
+We strongly recommend to use the docker container we prepared for running the MetaCH as this container has all the requirements installed including: 
+* StarSpace
+* SNPEff
+* SNPSift
+* FlaML
 
 ## Usage
-### Load the libraries
+### Jupyter Lab
+To interactively run the MetaCH classifier, Initialize a jupyter lab inside the container and follow the next steps: 
+#### Load the libraries
 ```python
 import pandas as pd
 from metach import chip_classifier
 ```
 
-### Required fields in the input data
+#### Required fields in the input data
 ```python
 schema = {
     "Chromosome": 'Chromosome',
@@ -27,7 +34,7 @@ schema = {
 }
 ```
 
-### Format table for CHIP classifier
+#### Format table for CHIP classifier
 ```python
 
 table = clf.format_table(
@@ -35,7 +42,7 @@ table = clf.format_table(
 )
 ```
 
-### Define parameters for CHIP classifier
+#### Define parameters for CHIP classifier
 ```python
 
 clf = chip_classifier(
@@ -51,7 +58,7 @@ clf = chip_classifier(
 
 ```
 
-### Predict CHIP score 
+#### Predict CHIP score 
 ```
 embeddings = clf.get_embeddings(table)
 predictions = clf.predict(embeddings)
