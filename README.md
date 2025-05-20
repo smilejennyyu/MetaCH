@@ -3,7 +3,6 @@ An artificial intelligence-based model for prediction of clonal hematopoiesis va
 
 👷 MetaCH repository is under construction 🛠️
 
-```
 ## Licensing
 This software includes third-party components that are governed by separate license terms
 
