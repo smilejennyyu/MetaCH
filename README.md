@@ -94,10 +94,6 @@ pip install --user git+https://github.com/gaarangoa/MetaCH.git
   Paths to pre-trained model weights (METk embedding bin file and classifiers).  
   **👉 Update if models are stored elsewhere or you are using custom models.**
 
-- **`logging`**  
-  Sets logging level and output log file path.  
-  **👉 Optional: update the file path to control where logs are saved.**
-
 
 ---
 
