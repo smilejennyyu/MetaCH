@@ -1,0 +1,21 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Model files / large binaries
+*.pk
+*.pkl
+
+# Local logs or temp outputs
+*.log
+*.tmp
+
+# VSCode or PyCharm
+.vscode/
+.idea/
+
+# OS-specific
+.DS_Store

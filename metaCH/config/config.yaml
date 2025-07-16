@@ -1,0 +1,27 @@
+# path info
+path_info:
+    benchmarking_data_path: "<PATH_TO_BENCHMARKING_DATA>"
+    path_razavi_dataset: "<PATH_TO_RAZAVI_DATASET>"
+    path_cBio_MSK_datasets: "<PATH_TO_CBIOPORTAL_MSK_DATASETS>"
+
+
+# Parsing Configuration
+parsing:
+    training_table_input_required_columns: ['Chromosome', 'Start_Position', 'End_Position','Reference_Allele','Tumor_Seq_Allele1','Tumor_Seq_Allele2', 'Variant_Type','Hugo_Symbol','NCBI_Build','Tumor_Sample_Barcode', 'SAMPLE_ID','CANCER_TYPE']
+        
+    inference_required_columns: ['Chromosome', 'Start_Position', 'End_Position','Reference_Allele','Tumor_Allele_1','Tumor_Allele_2', 'Variant_Type','Hugo_Symbol','Gene_Name','Reference_Genome','VAF','CANCER_TYPE','Sample_ID']
+    
+
+# Model Configuration  
+models:
+    paper:
+        metk: '<PATH_TO_METKMODEL>/dgv2.cbioportal.128.e500.bin'
+        classifier_ctdna: './models/cfDNA_classifier.pk'
+        classifier_Seq1: './models/seq1_classifier.pk'
+        classifier_Seq2: './models/seq2_classifier.pk'
+        metaClassifier: './models/metaClassifier.pk'
+        
+# Logging Configuration
+logging:
+  level: 'INFO'
+  file: '~/data/output/pipeline.log'
