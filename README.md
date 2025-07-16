@@ -80,7 +80,7 @@ pip install --user git+https://github.com/gaarangoa/MetaCH.git
 
 ---
 
-### 🛠 `config.yaml` Overview
+### 2. edit 🛠 `config.yaml` file
 
 - **`path_info`**  
   File system paths to required datasets (e.g., benchmarking, Razavi cfDNA, cBioPortal/MSK).  
@@ -101,7 +101,7 @@ pip install --user git+https://github.com/gaarangoa/MetaCH.git
 
 ---
 
-## 2️⃣ Generating Predictions on Your Own cfDNA Data
+## ✅ Generating Predictions on Your Own cfDNA Data
 
 We provide a worked example for applying the model to your own data in the notebook:
 
@@ -119,7 +119,7 @@ We provide a worked example for applying the model to your own data in the noteb
 
 ---
 
-## 3️⃣ Reproducing Results from the Paper
+## ✅ Reproducing Results from the Paper
 
 Use the following notebooks to replicate the analyses:
 
