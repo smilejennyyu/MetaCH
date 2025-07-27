@@ -165,10 +165,9 @@ Some datasets may require access requests.
 
 ---
 
-## Licensing
-This software includes third-party components that are governed by separate license terms
+## 🪪 Licensing
 
-While this tool is distributed under the MIT License, some included components are licensed under more restrictive terms.
+This project is licensed under the [Apache License 2.0](LICENSE).
 
 >**⚠️ IMPORTANT:** Users are responsible for reviewing and complying with the licenses of all third-party components used by MetaCH and <a href='https://github.com/gaarangoa/METk/tree/main?tab=readme-ov-file#licensing'> METk</a>.
 
