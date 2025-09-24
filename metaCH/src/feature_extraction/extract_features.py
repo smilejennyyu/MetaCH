@@ -31,8 +31,13 @@ def extract_features(dataset_table,version):
     table = Dataset(dataset_table)
     
     ref_g=dataset_table['Reference_Genome'].values[0]
+    print("ref_g: ", ref_g)
+    print("model_path: ", model_path)
+    
     with TemporaryDirectory() as metk_temp:
+        print("output_path: ", metk_temp)
         
+        print("Directory exists:", os.path.exists(metk_temp))
         metk = FeatureExtractor(
             reference_genome = ref_g,
             db = model_path,
@@ -41,8 +46,8 @@ def extract_features(dataset_table,version):
             output_path = metk_temp,
             mutation_model = model_name,
             run_deepgesture=True,
-            run_snpeff=True,
-            run_dbnsfp=True,
+            run_snpeff=False,
+            run_dbnsfp=False,
             run_deepgesture_gene=True,
         )
 
